@@ -1,12 +1,14 @@
 
+$width: 200px;
+
 .catalog {
   display: grid;
-  grid-template-columns: repeat(1, 200px);
+  grid-template-columns: repeat(1, $width);
   justify-content: center;
   gap: 48px;
 
   &__card {
-    width: 200px;
+    width: $width;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -17,18 +19,18 @@
 
 @media screen and (min-width: 488px) {
   .catalog {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, $width);
   }
 }
 
 @media screen and (min-width: 768px) {
   .catalog {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, $width);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .catalog {
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, $width);
   }
 }
